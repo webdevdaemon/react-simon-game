@@ -1,5 +1,51 @@
 {
   "components": {
-    "App": {}
+    "App": {},
+    "ContainerSimon": {},
+    "GamePanels": {},
+    "Panel": {
+      "attributes": [
+        "color",
+        "numSound"
+      ],
+      "props": {
+        "color": {
+          "type": {
+            "name": "string"
+          },
+          "required": true,
+          "description": ""
+        },
+        "numSound": {
+          "type": {
+            "name": "number"
+          },
+          "required": true,
+          "description": ""
+        }
+      }
+    },
+    "PanelRow": {
+      "attributes": [
+        "children",
+        "isTopRow"
+      ],
+      "props": {
+        "children": {
+          "type": {
+            "name": "node"
+          },
+          "required": true,
+          "description": ""
+        },
+        "isTopRow": {
+          "type": {
+            "name": "bool"
+          },
+          "required": true,
+          "description": ""
+        }
+      }
+    }
   }
 }
