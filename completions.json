@@ -1,7 +1,124 @@
 {
   "components": {
     "App": {},
-    "ContainerSimon": {},
+    "Button": {
+      "attributes": [
+        "buttonClass",
+        "buttonID",
+        "buttonText",
+        "buttonLabel"
+      ],
+      "props": {
+        "buttonClass": {
+          "type": {
+            "name": "string"
+          },
+          "required": false,
+          "description": "",
+          "defaultValue": {
+            "value": "'button'",
+            "computed": false
+          }
+        },
+        "buttonID": {
+          "type": {
+            "name": "string"
+          },
+          "required": false,
+          "description": ""
+        },
+        "buttonText": {
+          "type": {
+            "name": "string"
+          },
+          "required": false,
+          "description": ""
+        },
+        "buttonLabel": {
+          "type": {
+            "name": "string"
+          },
+          "required": false,
+          "description": ""
+        }
+      }
+    },
+    "ContainerApp": {},
+    "ControlPanel": {},
+    "DigitalDisplay": {
+      "attributes": [
+        "displayValue",
+        "nodeClass",
+        "nodeID",
+        "nodeLabel",
+        "visible"
+      ],
+      "props": {
+        "displayValue": {
+          "type": {
+            "name": "union",
+            "value": [
+              {
+                "name": "string"
+              },
+              {
+                "name": "number"
+              }
+            ]
+          },
+          "required": false,
+          "description": "",
+          "defaultValue": {
+            "value": "'--'",
+            "computed": false
+          }
+        },
+        "nodeClass": {
+          "type": {
+            "name": "string"
+          },
+          "required": true,
+          "description": "",
+          "defaultValue": {
+            "value": "'position'",
+            "computed": false
+          }
+        },
+        "nodeID": {
+          "type": {
+            "name": "string"
+          },
+          "required": true,
+          "description": "",
+          "defaultValue": {
+            "value": "'steps'",
+            "computed": false
+          }
+        },
+        "nodeLabel": {
+          "type": {
+            "name": "string"
+          },
+          "required": false,
+          "description": "",
+          "defaultValue": {
+            "value": "'steps'",
+            "computed": false
+          }
+        },
+        "visible": {
+          "type": {
+            "name": "bool"
+          },
+          "required": true,
+          "description": "",
+          "defaultValue": {
+            "value": "false",
+            "computed": false
+          }
+        }
+      }
+    },
     "GamePanels": {},
     "Panel": {
       "attributes": [
@@ -44,6 +161,24 @@
           },
           "required": true,
           "description": ""
+        }
+      }
+    },
+    "PowerSwitch": {
+      "attributes": [
+        "powerOn"
+      ],
+      "props": {
+        "powerOn": {
+          "type": {
+            "name": "bool"
+          },
+          "required": true,
+          "description": "",
+          "defaultValue": {
+            "value": "false",
+            "computed": false
+          }
         }
       }
     }

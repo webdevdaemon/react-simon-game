@@ -8,15 +8,23 @@
 	"parserOptions": {
 		"ecmaversion": 8,
 		"ecmaFeatures": {
-			"experimentalObjectRestSpread": true,
+      "experimentalObjectRestSpread": true,
+      "arrowFunctions": true,
+      "destructuring": true,
+      "modules": true,
+      "spread": true,
+      "restParams": true,
+      "objectLiteralShorthandProperties": true,
+      "objectLiteralComputedProperties": true,
+      "objectLiteralDuplicateProperties": true,
+      "objectLiteralShorthandMethods": true,
 			"jsx": true
 		},
 		"sourceType": "module"
 	},
 	"plugins": [
 		"react",
-    "react-app",
-    "es-beautifier"
+    "react-app"
 	],
   "extends": "react-app",
 	"rules": {
@@ -29,6 +37,8 @@
 	  "react/jsx-indent-props": [0,2],
 	  "react/jsx-indent": [0,2],
     "react/jsx-no-undef": 0,
-		"semi": [2, "never"]
+    "semi": [2, "never"],
+    "no-unused-vars": 0,
+    "jsx-a11y/href-no-hash": 0
 	}
 }

@@ -1,9 +1,10 @@
 {
 	"presets": [
-		"env",
 		"react",
-		"stage-0",
-    "react-app"
+    "react-app",
+		"env",
+    "stage-0",
+    "es2015"
 	],
   "plugins": [
     "transform-es2015-spread"

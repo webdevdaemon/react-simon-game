@@ -199,7 +199,7 @@ button:active {
   width: 100%;
   padding: 0 1vmin;
 }
-.center .interface .ui-node {
+.center .interface .game-control {
   height: auto;
   display: flex;
   flex-direction: column;
@@ -207,7 +207,7 @@ button:active {
   align-items: center;
   margin: auto;
 }
-.center .interface .ui-node .ui-label {
+.center .interface .game-control .game-control-label {
   font-family: 'helvetica', 'avenir', sans-serif;
   font-weight: 900;
   font-size: 2.5vmin;
@@ -221,7 +221,7 @@ button:active {
   margin: auto;
   padding: 0;
 }
-.center .interface .position .steps {
+#steps {
   box-sizing: border-box;
   display: block;
   background: #000;
@@ -230,7 +230,7 @@ button:active {
   margin: 0;
   padding: 0;
   font-family: monospace;
-  font-size: 7vmin;
+  font-size: 6vmin;
 }
 .center .interface .position .viz {
   color: orangered !important;
@@ -252,14 +252,14 @@ button:active {
   border-radius: 100%;
   margin: 0 auto 1vmin auto;
   padding: 0;
-  height: 10vmin;
-  width: 10vmin;
-  max-height: calc((900px/2.3)/7);
-  min-height: calc((400px/2.3)/4);
-  max-width: calc((900px/2.3)/7);
-  min-width: calc((400px/2.3)/4);
+  height: 14vmin;
+  width: 14vmin;
+  max-height: calc((900px/1.75)/7);
+  min-height: calc((400px/1.75)/4);
+  max-width: calc((900px/1.75)/7);
+  min-width: calc((400px/1.75)/4);
 }
-.center .interface .strict {
+.center .interface .mode {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -267,7 +267,7 @@ button:active {
   height: 100%;
   margin: auto;
 }
-.center .interface .strict button {
+.center .interface .mode button {
   background: darkslategray;
   display: block;
   border-radius: 100%;
@@ -275,16 +275,17 @@ button:active {
   padding: 0;
   height: 10vmin;
   width: 10vmin;
-  max-height: calc((900px/2.3)/7);
-  min-height: calc((400px/2.3)/4);
-  max-width: calc((900px/2.3)/7);
-  min-width: calc((400px/2.3)/4);
+  max-height: calc((900px/1.75)/7);
+  min-height: calc((400px/1.75)/4);
+  max-width: calc((900px/1.75)/7);
+  min-width: calc((400px/1.75)/4);
 }
 .center .power-switch {
   background: #000;
   border: solid white 3px;
   border-radius: 10vmin;
   height: 7vmin;
+  margin: 2vmin auto 0 auto;
   width: 66%;
 }
 .center .power-switch .switch {
