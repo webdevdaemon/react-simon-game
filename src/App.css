@@ -52,9 +52,9 @@ button:active {
   border: solid 3vmin black;
   border-radius: 100%;
   max-height: 900px;
-  min-height: 400px;
+  min-height: 320px;
   max-width: 900px;
-  min-width: 400px;
+  min-width: 320px;
   width: 100vmin;
   height: 100vmin;
   overflow: hidden;
@@ -147,9 +147,9 @@ button:active {
   justify-content: flex-start;
   align-items: center;
   max-height: calc(900px/2.3);
-  min-height: calc(400px/2.3);
+  min-height: calc(320px/2.3);
   max-width: calc(900px/2.3);
-  min-width: calc(400px/2.3);
+  min-width: calc(320px/2.3);
   padding: 12px;
   overflow: hidden;
   position: absolute;
@@ -254,8 +254,8 @@ button:active {
   border-radius: 100%;
   margin: 0 auto 1vmin auto;
   padding: 0;
-  height: 10vmin;
-  width: 10vmin;
+  height: 7vmin;
+  width: 7vmin;
   max-height: calc((900px/1.75)/7);
   min-height: calc((400px/1.75)/4);
   max-width: calc((900px/1.75)/7);
@@ -275,8 +275,8 @@ button:active {
   border-radius: 100%;
   margin: 0 auto 1vmin auto;
   padding: 0;
-  height: 10vmin;
-  width: 10vmin;
+  height: 7vmin;
+  width: 7vmin;
   max-height: calc((900px/1.75)/7);
   min-height: calc((400px/1.75)/4);
   max-width: calc((900px/1.75)/7);
