@@ -119,11 +119,61 @@
         }
       }
     },
-    "GamePanels": {},
+    "GameControls": {},
+    "GamePanels": {
+      "attributes": [
+        "panelActivator",
+        "activate"
+      ],
+      "props": {
+        "panelActivator": {
+          "type": {
+            "name": "func"
+          },
+          "required": true,
+          "description": ""
+        },
+        "activate": {
+          "type": {
+            "name": "string"
+          },
+          "required": false,
+          "description": "",
+          "defaultValue": {
+            "value": "''",
+            "computed": false
+          }
+        }
+      }
+    },
+    "GameTitle": {
+      "attributes": [
+        "top",
+        "bottom"
+      ],
+      "props": {
+        "top": {
+          "type": {
+            "name": "string"
+          },
+          "required": true,
+          "description": ""
+        },
+        "bottom": {
+          "type": {
+            "name": "string"
+          },
+          "required": true,
+          "description": ""
+        }
+      }
+    },
     "Panel": {
       "attributes": [
         "color",
-        "numSound"
+        "numSound",
+        "panelActivator",
+        "isActive"
       ],
       "props": {
         "color": {
@@ -138,6 +188,20 @@
             "name": "number"
           },
           "required": true,
+          "description": ""
+        },
+        "panelActivator": {
+          "type": {
+            "name": "func"
+          },
+          "required": true,
+          "description": ""
+        },
+        "isActive": {
+          "type": {
+            "name": "bool"
+          },
+          "required": false,
           "description": ""
         }
       }
@@ -166,7 +230,8 @@
     },
     "PowerSwitch": {
       "attributes": [
-        "powerOn"
+        "powerOn",
+        "powerToggle"
       ],
       "props": {
         "powerOn": {
@@ -179,6 +244,13 @@
             "value": "false",
             "computed": false
           }
+        },
+        "powerToggle": {
+          "type": {
+            "name": "func"
+          },
+          "required": false,
+          "description": ""
         }
       }
     }

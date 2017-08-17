@@ -1,8 +1,14 @@
-export default function() {
-  return [
-    {name: 'peepeebuttcrotch', age: 2},
-    {name: 'peepeebutt', age: 3},
-    {name: 'peepee', age: 4},
-    {name: 'pee', age: 5}
-  ]
+export const $GameState = (state = {}, action) => {
+  switch (action.type) {
+    case 'POWER_ON':
+      return Object.assign({}, state, {
+        powerOn: true
+      })
+    case 'POWER_OFF':
+      return Object.assign({}, state, {
+         powerOn: false
+      })
+    default:
+      return state
+  }
 }

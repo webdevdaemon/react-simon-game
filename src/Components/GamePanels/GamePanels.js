@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import Panel from '../Panel/index'
 import PanelRow from '../PanelRow/index'
 
-const GamePanels = ({ panelActivator }) => (
+const GamePanels = ({ panelActivator, activate }) => (
   <div className='simon'>
     <PanelRow isTopRow={true}>
       <Panel panelActivator={panelActivator} color='red' numSound={1} />
@@ -18,9 +18,12 @@ const GamePanels = ({ panelActivator }) => (
 )
 
 GamePanels.propTypes = {
-  panelActivator : PropTypes.func.isRequired
+  panelActivator: PropTypes.func.isRequired,
+  activate: PropTypes.string,
 }
 
-// GamePanels.defaultProps = {}
+GamePanels.defaultProps = {
+  activate: ''
+}
 
 export default GamePanels

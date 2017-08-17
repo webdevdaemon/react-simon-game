@@ -66,50 +66,50 @@ button:active {
   z-index: 99;
 }
 
-.red {
+.panel-red {
   border-right: solid 1.5vmin black;
   border-bottom: solid 1.5vmin black;
   background: red;
   opacity: .5;
 }
 
-.green {
+.panel-green {
   border-bottom: solid 1.5vmin black;
   border-left: solid 1.5vmin black;
   background: rgba(0, 255, 0, 0.45);
   opacity: .6;
 }
 
-.blue {
+.panel-blue {
   border-left: solid 1.5vmin black;
   border-top: solid 1.5vmin black;
   background: #5d81ec;
   opacity: .5;
 }
 
-.yellow {
+.panel-yellow {
   border-top: solid 1.5vmin black;
   border-right: solid 1.5vmin black;
   background: #ffff00;
   opacity: .5;
 }
 
-.red.active {
+.panel-red.active {
   background: orangered;
   opacity: 1;
 }
 
-.green.active {
+.panel-green.active {
   background: #3EDB00;
   opacity: 1;
 }
 
-.blue.active {
+.panel-blue.active {
   background: cornflowerblue;
   opacity: 1;
 }
 
-.yellow.active {
+.panel-yellow.active {
   background: #ffff00;
   opacity: 1;
 }
@@ -157,7 +157,7 @@ button:active {
   width: 45vmin;
   z-index: 100;
 }
-.center .unit-label {
+.center .game-title {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -171,18 +171,18 @@ button:active {
   width: 50%;
   z-index: 1;
 }
-.center .unit-label .label {
+.center .game-title .text {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: inherit;
 }
-.center .unit-label .top {
+.center .game-title .top {
   font-size: 5vmin;
   margin: 0 auto 1vmin auto;
 }
-.center .unit-label .bottom {
+.center .game-title .bottom {
   font-size: 10vmin;
   margin: 0 auto;
 }
@@ -227,7 +227,9 @@ button:active {
   background: #000;
   border: inset 3px #bbb;
   border-radius: 5%;
-  margin: 0;
+  height: 8vmin;
+  width: 8vmin;
+  margin: 0 auto 1vmin auto;
   padding: 0;
   font-family: monospace;
   font-size: 6vmin;
@@ -252,8 +254,8 @@ button:active {
   border-radius: 100%;
   margin: 0 auto 1vmin auto;
   padding: 0;
-  height: 14vmin;
-  width: 14vmin;
+  height: 10vmin;
+  width: 10vmin;
   max-height: calc((900px/1.75)/7);
   min-height: calc((400px/1.75)/4);
   max-width: calc((900px/1.75)/7);
